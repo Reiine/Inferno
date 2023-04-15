@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+}
+
+body{
+  background-color: black;
+}
+a{
+  text-decoration: none;
+}
+
+
+nav{
+  position: fixed;
+  z-index: 99;
+  background-color: #FF0E4B;
+  width: 100%;
+  height: 5rem;
+}
+
+
+nav h1{
+  color: white;
+  float: left;
+  position: relative;
+  top: 1rem;
+  left: 3.8rem;
+  margin-bottom: 0;
+}
+
+
+
+.caim{
+  width: 100%;
+  background-size: contain;
+  height: 50rem;
+}
+
+.imcar a{
+  color: white;
+}
+
+.imcar{
+  margin: 0;
+}
+
+.imcar img{
+  position: relative;
+  top: 5rem;
+  height: 46rem;
+  opacity: 0.5;
+}
+
+
+
+.cate{
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  color: white;
+}
+
+.alphabet{
+  margin-top: 0rem;
+  text-align: center;
+}
+.alphabet button{
+  margin-left: 2rem;
+  text-decoration: none;
+  color: black;
+  background: none;
+  border: none;
+  padding: 0;
+  color: white;
+}
+.alphabet button:hover{
+  color: #009D00;
+}
+
+.show{
+  justify-content: space-between;
+  margin-top: 5rem;
+  display: inline-flex;
+  height: 17rem;
+  width: 15rem;
+  padding: 0;
+}
+.s img{
+  border-radius: 10px;
+  height: 15rem;
+}
+
+.s{
+  justify-content: space-around;
+  margin-left: 3rem;
+  background-color: black;
+  color: lightgray;
+  font-size: 10px;
+  border-radius: 0;
+}
+.s h5{
+  color: whitesmoke;
+  font-size: 15px;
+}
+.s a{
+  text-decoration: none;
+  color: white;
+}
+
+.s:hover{
+  transform: scale(1.01);
+}
+
+
+
+.search{
+  padding-bottom: 2.5rem;
+  display: inline-block;
+  position: absolute;
+  top: 1.3rem;
+  right: 4.5rem;
+}
+
+.search >a{
+  border: 1px solid inherit;
+  background-color: #009D00;
+  padding: 8.41px 20px;
+  border-left-color: white;
+  border-radius: 0 12px 12px 0;
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+.search >a:hover{
+  background-color: #FF0E4B;
+  color: white;
+}
+.search a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.search input{
+  padding: 8px;
+  border-radius: 12px 0 0 12px;
+  width: 28.4rem;
+  border: none;
+  outline: none;
+}
+.searchItemInfo a:hover{
+  color: #009D00;
+}
+.searchItems{
+  color: black;
+  background-color: whitesmoke;
+  width: 28.4rem;
+  height: 7rem;
+  border-radius: 10px ;
+  border-top: 1px solid gray;
+
+}
+.searchItems img{
+  height: 6.9rem;
+  width: 5rem;
+  padding: 5px;
+}
+.searchItems a{
+  color: black;
+}
+.searchItemInfo{
+  color: black;
+  display: inline-block;
+  position: relative;
+  left: 7px;
+}
+
+.noresult{
+  display: block;
+  width: 74%;
+  height: 10rem;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: 13.5rem;
+  background-color:#009D00;
+  border-radius: 20px;
+}
+.noresult p:first-child{
+  font-size: 3rem;
+}
+
+.details{
+  height: 90rem;
+}
+.related{
+  color: white;
+  margin-left: 3.8rem;
+  padding-top: 5rem;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.videodiv{
+  display: flex;
+  padding-top: 10rem;
+  margin-left: 3.8rem;
+  margin-right: 3.8rem;
+}
+
+.commondetail{
+  width: 50%;
+  color: gray;
+  position: relative;
+  left: 3rem;
+  margin-right: 4rem;
+  line-height: 5rem;
+}
+.commondetail h3{
+  line-height: 5rem;
+  color: white;
+}
+.commondetail p{
+  overflow-wrap: break-word;
+  line-height: 2rem;
+  width: 32rem;
+}
+
+footer{
+  text-align: center;
+  color: lightgray;
+  height: 10rem;
+  width: 100%;
+  bottom: 0;
+  background-color: #FF0E4B;
+  margin-top: 10rem;
+  padding-top: 3rem;
+  position: relative;
+  bottom: 0;
+}
+
+
+.searchPage{
+  padding-top: 10rem;
+  color: white;
+  background-color: black;
+}
+.searchPage h4{
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.detbut :first-child{
+  margin-right: 1rem;
+}
+.detbut{
+  margin-top: 3rem;
+  display: flex;
+}
+
+.detbut Button{
+  width: 50%;
+}
+.detbut3{
+  width: 100%;
+}
