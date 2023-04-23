@@ -11,10 +11,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<><Header/><Carousel/><Categories/><Footer/></>}/>
-        
+        {['/','/Inferno'].map((path,index)=>{
+          return(
+            <Route key={index} path={path}  element={<><Header/><Carousel/><Categories/><Footer/></>}/>
+          )
+        })}
         <Route path='/search/:link' element={<><Header/><Search/><Footer/></>}/>
-        <Route path='details/:link' element={<><Header/><Detailpage/> <Footer/> </>}/>
+        <Route path='/Inferno/details/:link' element={<><Header/><Detailpage/> <Footer/> </>}/>
       </Routes>
     </BrowserRouter>
   );

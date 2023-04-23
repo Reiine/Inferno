@@ -32,7 +32,7 @@ function Detailpage() {
     return (
         <div className='details'>
             <div className='videodiv'>
-                <video src={video} controls allowFullScreen muted={1} autoplay={1} width={800} height={500} title={filter[0].Title} />
+                <video src={video} controls allowFullScreen muted={1} autoPlay={1} width={800} height={500} title={filter[0].Title} />
                 <div className="commondetail">
                     <h3>{filter[0].Title} {`(${filter[0].Year})`}</h3>
                     <p>{filter[0].Des} </p>
