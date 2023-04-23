@@ -19,24 +19,24 @@ function Header() {
     }
     const handleKeyPress =(e) =>{
         if (e.key==='Enter'){
-            window.location.replace(`/search/${searchValue}`)
+            window.location.replace(`/Inferno/search/${searchValue}`)
         }
     }
 
     return (
         <>
             <nav>
-                <a href='/'><h1 className='font-bold text-4xl'>Inferno</h1></a>
+                <a href='/Inferno'><h1 className='font-bold text-4xl'>Inferno</h1></a>
                 <div className='search'>
                     <input type="text" onChange={(e) => searchIt(e.target.value)} onKeyDown={handleKeyPress} />
 
-                    <a href={`/search/${searchValue}`}>Search</a>
+                    <a href={`/Inferno/search/${searchValue}`}>Search</a>
                     {navSearch && navSearch.map((element, index) => {
                         return (
                             <div className='searchItems' key={index}>
                                 <img src={element.Poster} alt="img" />
                                 <div className='searchItemInfo'>
-                                    <a href={`/details/${element.imdbID}`}><h6>{element.Title}</h6></a>
+                                    <a href={`/Inferno/details/${element.imdbID}`}><h6>{element.Title}</h6></a>
                                     <p>{element.Year}</p>
                                 </div>
                             </div>

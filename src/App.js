@@ -16,7 +16,7 @@ function App() {
             <Route key={index} path={path}  element={<><Header/><Carousel/><Categories/><Footer/></>}/>
           )
         })}
-        <Route path='/search/:link' element={<><Header/><Search/><Footer/></>}/>
+        <Route path='/Inferno/search/:link' element={<><Header/><Search/><Footer/></>}/>
         <Route path='/Inferno/details/:link' element={<><Header/><Detailpage/> <Footer/> </>}/>
       </Routes>
     </BrowserRouter>
