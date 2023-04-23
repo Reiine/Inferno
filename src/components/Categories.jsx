@@ -3,6 +3,7 @@ import records from '../shows.json'
 import Shows from './Shows';
 
 function Categories() {
+    const alphabet =['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
     const [items, setFilterItems] = useState(records)
     const [letterClicked, setLetter] = useState('')
     const [aval, setA] = useState('')
@@ -19,32 +20,11 @@ function Categories() {
             <div className='alphabet'>
                 <h3 className='cate'>Categories</h3>
                 <button onClick={()=>{setFilterItems(records); setLetter('')}}>Reset</button>
-                <button onClick={()=> categoryClick("A")}>A</button>
-                <button onClick={()=> categoryClick("B")}>B</button>
-                <button onClick={()=> categoryClick("C")}>C</button>
-                <button onClick={()=> categoryClick("D")}>D</button>
-                <button onClick={()=> categoryClick("E")}>E</button>
-                <button onClick={()=> categoryClick("F")}>F</button>
-                <button onClick={()=> categoryClick("G")}>G</button>
-                <button onClick={()=> categoryClick("H")}>H</button>
-                <button onClick={()=> categoryClick("I")}>I</button>
-                <button onClick={()=> categoryClick("J")}>J</button>
-                <button onClick={()=> categoryClick("K")}>K</button>
-                <button onClick={()=> categoryClick("L")}>L</button>
-                <button onClick={()=> categoryClick("M")}>M</button>
-                <button onClick={()=> categoryClick("N")}>N</button>
-                <button onClick={()=> categoryClick("O")}>O</button>
-                <button onClick={()=> categoryClick("P")}>P</button>
-                <button onClick={()=> categoryClick("Q")}>Q</button>
-                <button onClick={()=> categoryClick("R")}>R</button>
-                <button onClick={()=> categoryClick("S")}>S</button>
-                <button onClick={()=> categoryClick("T")}>T</button>
-                <button onClick={()=> categoryClick("U")}>U</button>
-                <button onClick={()=> categoryClick("V")}>V</button>
-                <button onClick={()=> categoryClick("W")}>W</button>
-                <button onClick={()=> categoryClick("X")}>X</button>
-                <button onClick={()=> categoryClick("Y")}>Y</button>
-                <button onClick={()=> categoryClick("Z")}>Z</button>
+                {alphabet.map((element,index)=>{
+                    return(
+                        <button key = {index} onClick={()=>categoryClick(element)}>{element}</button>
+                    )
+                })}
             </div>
             {items.map((element,index)=>{
                 return(
