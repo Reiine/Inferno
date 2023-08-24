@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import records from '../shows.json';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Header() {
+    const navigate = useNavigate();
     const [navSearch, setNavSearch] = useState(null)
     const [searchValue , setSearchValue] = useState(null)
     const searchIt = (val)=>{
@@ -19,24 +21,24 @@ function Header() {
     }
     const handleKeyPress =(e) =>{
         if (e.key==='Enter'){
-            window.location.replace(`/Inferno/search/${searchValue}`)
+            navigate(`/search/${searchValue}`);
         }
     }
 
     return (
         <>
             <nav>
-                <a href='/Inferno'><h1 className='font-bold text-4xl'>Inferno</h1></a>
+                <Link to='/'><h1 className='font-bold text-4xl'>Inferno</h1></Link>
                 <div className='search'>
                     <input type="text" onChange={(e) => searchIt(e.target.value)} onKeyDown={handleKeyPress} />
 
-                    <a href={`/Inferno/search/${searchValue}`}>Search</a>
+                    <Link to={`/search/${searchValue}`}>Search</Link>
                     {navSearch && navSearch.map((element, index) => {
                         return (
                             <div className='searchItems' key={index}>
                                 <img src={element.Poster} alt="img" />
                                 <div className='searchItemInfo'>
-                                    <a href={`/Inferno/details/${element.imdbID}`}><h6>{element.Title}</h6></a>
+                                    <Link to={`/details/${element.imdbID}`}><h6>{element.Title}</h6></Link>
                                     <p>{element.Year}</p>
                                 </div>
                             </div>

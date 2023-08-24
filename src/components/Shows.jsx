@@ -1,11 +1,12 @@
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function Shows(props) {
 
   return (
     <div className='show'>
       <Card style={{ width: '18rem' }} className="s">
-        <a href={`/Inferno/details/${props.imdbID}`}>
+        <Link to={`/details/${props.imdbID}`}>
           <Card.Img variant="top" src={props.Poster} />
           <Card.Body>
             <Card.Title><h5>{props.Title}</h5></Card.Title>
@@ -13,7 +14,7 @@ function Shows(props) {
               {props.Year}
             </Card.Text>
           </Card.Body>
-        </a>
+        </Link> 
       </Card>
     </div>
 

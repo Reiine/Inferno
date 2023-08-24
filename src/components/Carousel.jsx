@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
 function Carousels() {
   return (
@@ -10,7 +11,7 @@ function Carousels() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <a href="/details/tt9419884"><h3>Doctor Strange: Multiverse Of Madness</h3></a>
+          <Link to="/details/tt9419884"><h3>Doctor Strange: Multiverse Of Madness</h3></Link>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -22,7 +23,7 @@ function Carousels() {
         />
 
         <Carousel.Caption>
-          <a href="/details/tt2488496"><h3>Star Wars: The Force Awakens</h3></a>
+          <Link to="/details/tt2488496"><h3>Star Wars: The Force Awakens</h3></Link>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -34,7 +35,7 @@ function Carousels() {
         />
 
         <Carousel.Caption>
-          <a href="/details/tt4052886"><h3>Lucifer</h3></a>
+          <Link to="/details/tt4052886"><h3>Lucifer</h3></Link>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>

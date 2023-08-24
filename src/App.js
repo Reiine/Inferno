@@ -11,13 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {['/','/Inferno'].map((path,index)=>{
-          return(
-            <Route key={index} path={path}  element={<><Header/><Carousel/><Categories/><Footer/></>}/>
-          )
-        })}
-        <Route path='/Inferno/search/:link' element={<><Header/><Search/><Footer/></>}/>
-        <Route path='/Inferno/details/:link' element={<><Header/><Detailpage/> <Footer/> </>}/>
+        <Route path={'/'}  element={<><Header/><Carousel/><Categories/><Footer/></>}/>
+        <Route path='/search/:link' element={<><Header/><Search/><Footer/></>}/>
+        <Route path='/details/:link' element={<><Header/><Detailpage/> <Footer/> </>}/>
       </Routes>
     </BrowserRouter>
   );
