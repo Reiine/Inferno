@@ -4,7 +4,7 @@ function Footer() {
     const [text, setText] = useState("");
 
   useEffect(() => {
-        fetch("/example.txt")
+        fetch("example.txt")
           .then((response) => response.text())
           .then((data) => setText(data))
           .catch((err) => console.error("Error loading text file:", err));
